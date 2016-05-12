@@ -1,0 +1,8 @@
+$background: blue;
+
+.component1{
+  h2 {
+      background: $background;
+      color: yellow;
+  }
+}

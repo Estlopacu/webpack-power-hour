@@ -44,14 +44,30 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1);
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
 
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-	document.write("Tara! Tara!");
+	"use strict";
+
+	document.write("Car");
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	let checkName= (firstName, lastName) => {
+	 if(firstName !== 'nader' || lastName !== 'dabit') {
+	   document.write('You are not Nader Dabit');
+	 } else {
+	    document.write('You are Nader Dabit');
+	  }
+	}
+	checkName('nader', 'jackson');
 
 
 /***/ }
